@@ -1,0 +1,1 @@
+import requests, hashlib, re, bs4; r = requests.session(); url = str(input("URL: ")); print("HTB"+re.compile("HTB(.*)}").findall(r.post(url, data=dict(hash=hashlib.md5(bs4.BeautifulSoup(r.get(url).text, 'lxml').h3.text.encode()).hexdigest())).text)[0]+"}")

